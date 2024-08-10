@@ -2,10 +2,10 @@ manifestVersion: 1
 id: totiju-Hat-sh
 name: Hat.sh
 tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
+icon: https://camo.githubusercontent.com/7240655aab8a647c542affec32731978251749c027f0f5875fc1042e4ea55b56/68747470733a2f2f692e696d6775722e636f6d2f386230474532422e706e67
 category: Development
 version: "1.0.0"
-port: 4000
+port: 3991
 description: >-
   Add your app's description here.
 
