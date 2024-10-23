@@ -2,7 +2,7 @@
   "id": "kavita",
   "name": "Kavita",
   "description": "Kavita is a fast, feature-rich eBook manager.",
-  "version": "1.0.0",
+  "version": "0.8.3.2",
   "repository": "https://github.com/jvmilazz0/kavita",
   "slug": "kavita",
   "type": "app",
@@ -13,8 +13,8 @@
   "healthCheckPath": "/",
   "healthCheckPort": 5000,
   "update": {
-    "repository": "https://github.com/jvmilazz0/kavita",  # Il repository per gli aggiornamenti
-    "version": "1.0.0",  # Versione corrente
+    "repository": "https://github.com/Kareadita/Kavita",  # Il repository per gli aggiornamenti
+    "version": "0.8.3.2",  # Versione corrente
     "autoUpdate": true   # Facoltativo, specifica se Umbrel può gestire automaticamente l'aggiornamento
   }
 }
