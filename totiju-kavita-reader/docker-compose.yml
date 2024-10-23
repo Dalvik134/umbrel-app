@@ -5,9 +5,9 @@ services:
     image: jvmilazz0/kavita:latest
     container_name: kavita
     volumes:
-      - /mnt/data/kavita/manga:/manga            # Aggiorna il volume per Umbrel
-      - /mnt/data/kavita/comics:/comics          # Aggiorna il volume per Umbrel
-      - /mnt/data/kavita/books:/books            # Aggiorna il volume per Umbrel
+      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/manga:/manga            # Aggiorna il volume per Umbrel
+      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/comics:/comics          # Aggiorna il volume per Umbrel
+      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/books:/books            # Aggiorna il volume per Umbrel
       - /mnt/data/kavita/config:/kavita/config   # Umbrel richiede di salvare i dati in /mnt/data/
     environment:
       - TZ=Europe/Rome  # Imposta il tuo fuso orario
