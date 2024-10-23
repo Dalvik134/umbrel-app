@@ -1,26 +1,21 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: 192.168.0.176
-      APP_PORT: 5000
-    networks:
-      - appnet
-
-  web:
-    image: kizaing/kavita:latest
-    restart: on-failure
-    stop_grace_period: 1m
-    ports:
-      - "5012:5000"
+  kavita:
+    image: jvmilazz0/kavita:latest
+    container_name: kavita
     volumes:
-      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/manga:/manga
-      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/comics:/comics
-      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/books:/books
-      - /data/umbrel-os/home/umbrel/umbrel/data/storage/downloads/Kavita/data:/kavita/config
-    networks:
-      - appnet
+      - /mnt/data/kavita/manga:/manga            # Aggiorna il volume per Umbrel
+      - /mnt/data/kavita/comics:/comics          # Aggiorna il volume per Umbrel
+      - /mnt/data/kavita/books:/books            # Aggiorna il volume per Umbrel
+      - /mnt/data/kavita/config:/kavita/config   # Umbrel richiede di salvare i dati in /mnt/data/
+    environment:
+      - TZ=Europe/Rome  # Imposta il tuo fuso orario
+    ports:
+      - "5000:5000" # Cambia la porta esterna (la prima 5000) se c'è conflitto con altre app
+    restart: unless-stopped
 
 networks:
-  appnet:
+  default:
+    external:
+      name: umbrel_main_network
