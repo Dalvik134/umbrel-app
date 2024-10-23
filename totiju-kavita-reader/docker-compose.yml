@@ -12,7 +12,7 @@ services:
     environment:
       - TZ=Europe/Rome  # Imposta il tuo fuso orario
     ports:
-      - "5000:5000" # Cambia la porta esterna (la prima 5000) se c'è conflitto con altre app
+      - "5012:5000" # Cambia la porta esterna (la prima 5000) se c'è conflitto con altre app
     restart: unless-stopped
 
 networks:
