@@ -1,5 +1,5 @@
 {
-  "id": "totiju-kavita-reader",
+  "id": "kavita",
   "name": "Kavita",
   "description": "Kavita is a fast, feature-rich eBook manager.",
   "version": "1.0.0",
@@ -12,5 +12,9 @@
   "port": 5000,
   "healthCheckPath": "/",
   "healthCheckPort": 5000,
-  "dependencies": []
+  "update": {
+    "repository": "https://github.com/jvmilazz0/kavita",  # Il repository per gli aggiornamenti
+    "version": "1.0.0",  # Versione corrente
+    "autoUpdate": true   # Facoltativo, specifica se Umbrel può gestire automaticamente l'aggiornamento
+  }
 }
