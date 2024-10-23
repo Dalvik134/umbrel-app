@@ -1,0 +1,16 @@
+{
+  "id": "totiju-kavita-reader",
+  "name": "Kavita",
+  "description": "Kavita is a fast, feature-rich eBook manager.",
+  "version": "1.0.0",
+  "repository": "https://github.com/jvmilazz0/kavita",
+  "slug": "kavita",
+  "type": "app",
+  "website": "https://kavita.app",
+  "icon": "https://kavita.app/favicon.ico",
+  "volume": "/mnt/data/kavita",
+  "port": 5000,
+  "healthCheckPath": "/",
+  "healthCheckPort": 5000,
+  "dependencies": []
+}
