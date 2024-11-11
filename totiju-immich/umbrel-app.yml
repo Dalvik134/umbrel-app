@@ -2,7 +2,7 @@ manifestVersion: 1
 id: totiju-immich
 category: media
 name: Immich
-icon: https://raw.githubusercontent.com/immich-app/immich/main/assets/logo.png  # Assicurati che l'URL dell'icona sia corretto
+icon: https://immich.app/img/logomark-light.svg  # Assicurati che l'URL dell'icona sia corretto
 version: "1.0.0"
 tagline: A fast, self-hosted photo and video management tool with machine learning support.
 description: >-
