@@ -1,18 +1,42 @@
-id: myappstore-immich
+manifestVersion: 1
+id: totiju-immich
+category: media
 name: Immich
-version: 1.0.0
-description: "Immich è un'applicazione per la gestione di foto e video con supporto all'apprendimento automatico."
-repository: "https://github.com/immich-app/immich"
-license: "AGPL-3.0"
-ports:
-  - 2283:2283
-volumes:
-  - /data/immich:/usr/src/app/upload
-env_file:
-  - .env
-services:
-  - immich-server
-  - immich-machine-learning
-  - redis
-  - database
+icon: https://raw.githubusercontent.com/immich-app/immich/main/assets/logo.png  # Assicurati che l'URL dell'icona sia corretto
+version: "1.0.0"
+tagline: A fast, self-hosted photo and video management tool with machine learning support.
+description: >-
+  Immich is a high-performance, self-hosted photo and video management tool that leverages machine learning for intelligent features.
 
+  Features:
+    - Upload and manage photos and videos from any device
+    - Perform real-time object detection and tagging with integrated machine learning models
+    - Create albums and categorize photos by tags, events, or locations
+    - Built-in face recognition to organize images by people
+    - Search capabilities that allow for easy retrieval based on metadata
+    - Secure and private storage for all your memories
+    - Device-sync capabilities to ensure your media is always backed up
+
+releaseNotes: >-
+  - Initial release of Immich for Umbrel.
+  - Adds support for machine learning models to tag and categorize photos.
+  - Improved sync performance for large libraries.
+  - Bug fixes and optimizations for self-hosted environments.
+
+developer: Immich
+website: https://immich.app
+dependencies: []
+repo: https://github.com/immich-app/immich
+support: https://immich.app/docs
+port: 2283
+gallery:
+  - https://immich.app/images/screenshot1.png
+  - https://immich.app/images/screenshot2.png
+path: ""
+defaultUsername: "admin"       # Se applicabile, specifica l'username di default
+defaultPassword: "password"     # Se applicabile, specifica la password di default
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: YourName
+submission: https://github.com/yourgithub/umbrel-app-store
